@@ -1,17 +1,28 @@
-$light: #e7f3ff;
 
-$icon-rounded-bg: #e4e6eb;
-$icon-color: #5f666f;
+$mycolor1:#fff;
+$mycolor2:#E0EEFF;
+$mycolor3:#B7DBFF;
+$mycolor4:#9EB9FF;
+$mycolor5:#8C9CF7;
+
+
 
 $theme-colors: (
-  "primary": #1877f2,
-  "light": $light,
+  "mycolor1": $mycolor1,
+  "mycolor2": $mycolor2,
+  "mycolor3": $mycolor3,
+  "mycolor4": $mycolor4,
+  "mycolor5": $mycolor5,
+  
 );
+
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+
+
 .sidebar-container {
-  height: calc(100vh - 66px);
+  height: 100vh;
   transition: margin .25s ease-in-out;
   overflow: auto;
 }
@@ -26,10 +37,16 @@ $theme-colors: (
     padding: .875rem 1.25rem;
    
   }
+  
 }
 
 .sidebar-container {
-  width: 360px
+  .menu{
+    width: 18rem;
+    
+  }
+  
+
 }
 
 .glass {
@@ -44,7 +61,18 @@ $theme-colors: (
   font-size: 12px;
 }
 
+a.bg-mycolor1 {
+      &:focus {
+        background-color: #e9f3ff !important;
+      }
+}
+
+hr {
+  width: 90%;
+}
+
 .icon-end {
+ 
   border-radius: 50%;
   background-color: #f0f2f5;
   color: #1e2023;
@@ -53,27 +81,35 @@ $theme-colors: (
   display: flex;
   justify-content: center;
   align-items: center;
-    &:hover {
-      background-color: #e4e6eb;
-    }
+      &:hover {
+        background-color: #e4e6eb;
+      }
+  
+  
 }
 
 .icon__center {
-  min-width: 50px;
-  color: #65676b;
-  position: relative;
-    &:hover{
-      background-color: #e4e6eb;
-      height: 50px;
-      width: 8%;
-      border-radius: 8px;
-    }
-    &:focus {
-      color: #1877f2 !important;
-    }
-    &:active {
-      color: #1877f2 !important;
-    }
+min-width: 50px;
+color: #65676b;
+position: relative;
+
+
+        &:hover{
+          background-color: #e4e6eb;
+          height: 50px;
+          width: 8%;
+          border-radius: 8px;
+    
+        }
+
+        &:focus {
+          color: #1877f2 !important;
+        }
+
+        &:active {
+          color: #1877f2 !important;
+        }
+
 }
 
 .badge {
@@ -82,6 +118,7 @@ $theme-colors: (
   top: 5px;
   right: 12px;
 }
+
 
 .linear {
   position: absolute;
@@ -117,6 +154,12 @@ $theme-colors: (
   font-weight: normal;
   padding-left: 26px;
   position: relative;
+
+}
+
+.nav-icon-star {
+  position: absolute; 
+  
 }
 
 .bells {
@@ -143,21 +186,24 @@ $theme-colors: (
   right: 10px;
 }
 
+
+
 .list-icon {
+  background-color: #000;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: 12px;
   display: inline-flex;
   justify-content: center;
-  align-items: center;
-  background-color: $icon-rounded-bg;
-  height: 36px;
-  width: 36px;
-  border-radius: 100%;
-  color: $icon-color;
+  
 }
 
 .sidebar-container::-webkit-scrollbar {
   width: 8px;
   background-color: #f0f2f5;
   height: 1215px;
+ 
 }
 
 .sidebar-container::-webkit-scrollbar-thumb {
