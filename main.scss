@@ -1,30 +1,21 @@
 
-$mycolor1:#fff;
-$mycolor2:#E0EEFF;
-$mycolor3:#B7DBFF;
-$mycolor4:#9EB9FF;
-$mycolor5:#8C9CF7;
+$light: #e7f3ff;
 
-
+$icon-rounded-bg: #e4e6eb;
+$icon-color: #050505;
 
 $theme-colors: (
-  "mycolor1": $mycolor1,
-  "mycolor2": $mycolor2,
-  "mycolor3": $mycolor3,
-  "mycolor4": $mycolor4,
-  "mycolor5": $mycolor5,
-  
+  "primary": #1877f2,
+  "light": $light,
 );
-
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
-
-
 .sidebar-container {
-  height: 100vh;
+  height: calc(100vh - 66px);
   transition: margin .25s ease-in-out;
   overflow: auto;
+ 
 }
 
 .logo-facebook  {
@@ -34,91 +25,86 @@ $theme-colors: (
 
 .sidebar-container  {
   .logo{
-    padding: .875rem 1.25rem;
-   
+    padding: .875rem 1.25rem; 
   }
-  
 }
 
 .sidebar-container {
-  .menu{
-    width: 18rem;
-    
-  }
-  
-
+  width: 360px
 }
+
+
+.content-wrapper {
+  padding-top: 68px;
+}
+
 
 .glass {
   background-color: #f0f2f5;
-  display: inline-block;
-  width: 38px;
-  height: 38px;
-  text-align: center;
-  line-height: 38px;
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   color: #626871;
   font-size: 12px;
+  justify-content: center;
+  align-items: center;
 }
 
-a.bg-mycolor1 {
-      &:focus {
-        background-color: #e9f3ff !important;
-      }
+.form-inline {
+  position: relative;
 }
 
-hr {
-  width: 90%;
+.navbar-brand {
+  margin-right: 8px !important;
 }
-
 .icon-end {
- 
   border-radius: 50%;
-  background-color: #f0f2f5;
-  color: #1e2023;
+  background-color: $icon-rounded-bg;
+  fill: $icon-color;
   width: 40px; 
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-      &:hover {
-        background-color: #e4e6eb;
-      }
-  
-  
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+    }
 }
+
+.nav-icon-star {
+  position: absolute;
+}
+
+
 
 .icon__center {
-min-width: 50px;
-color: #65676b;
-position: relative;
+  fill: #65676b;
+  position: relative;
+  height: 52px;
+  width: 98.59px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 
 
-        &:hover{
-          background-color: #e4e6eb;
-          height: 50px;
-          width: 8%;
-          border-radius: 8px;
-    
-        }
-
-        &:focus {
-          color: #1877f2 !important;
-        }
-
-        &:active {
-          color: #1877f2 !important;
-        }
-
+    &:hover{
+      background-color: #e4e6eb;
+      border-radius: 8px;
+    }
+    &:focus {
+      color: #1877f2 !important;
+    }
+    &:active {
+      color: #1877f2 !important;
+    }
 }
 
-.badge {
+.badge-notification {
   position: absolute;
-  border-radius: 1.25rem;
-  top: 5px;
-  right: 12px;
+  top: 2px;
+  right: 24px;
 }
-
 
 .linear {
   position: absolute;
@@ -140,7 +126,7 @@ position: relative;
 
 .input-sidebar {
   border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 17px;
+  border-bottom-right-radius: 50px;
   border-top-right-radius: 50px;
   border-top-left-radius: 50px;
   height: 36px;
@@ -153,12 +139,6 @@ position: relative;
   border: 0;
   font-weight: normal;
   padding-left: 26px;
-  position: relative;
-
-}
-
-.nav-icon-star {
-  position: absolute; 
   
 }
 
@@ -186,24 +166,21 @@ position: relative;
   right: 10px;
 }
 
-
-
 .list-icon {
-  background-color: #000;
-  height: 30px;
-  width: 30px;
-  border-radius: 50%;
-  font-size: 12px;
   display: inline-flex;
   justify-content: center;
-  
+  align-items: center;
+  background-color: $icon-rounded-bg;
+  height: 36px;
+  width: 36px;
+  border-radius: 100%;
+  color: $icon-color;
 }
 
 .sidebar-container::-webkit-scrollbar {
   width: 8px;
   background-color: #f0f2f5;
   height: 1215px;
- 
 }
 
 .sidebar-container::-webkit-scrollbar-thumb {
