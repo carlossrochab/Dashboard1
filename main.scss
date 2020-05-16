@@ -1,5 +1,6 @@
 
 $light: #e7f3ff;
+$blue-light : #e7f3ff;
 
 $icon-rounded-bg: #e4e6eb;
 $icon-color: #050505;
@@ -76,8 +77,29 @@ $theme-colors: (
   position: absolute;
 }
 
+.active {
+  fill: $primary !important ;
+  &:before {
+    content: "";
+    width: 100%;
+    position: absolute; 
+    border-bottom: 3px solid $primary;
+    bottom: -10px;
+      }
+}
 
+.list-group-item {
+  font-weight: 500;
+}
 
+.list-active {
+  background-color: $blue-light;
+  fill: #fff; 
+    .list-icon {
+      background-color: $primary;
+    }
+  
+}
 .icon__center {
   fill: #65676b;
   position: relative;
@@ -87,17 +109,11 @@ $theme-colors: (
   justify-content: center;
   align-items: center;
 
-
     &:hover{
       background-color: #e4e6eb;
       border-radius: 8px;
     }
-    &:focus {
-      color: #1877f2 !important;
-    }
-    &:active {
-      color: #1877f2 !important;
-    }
+    
 }
 
 .badge-notification {

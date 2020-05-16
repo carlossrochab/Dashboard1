@@ -7823,6 +7823,24 @@ a.text-dark:hover, a.text-dark:focus {
 .nav-icon-star {
   position: absolute; }
 
+.active {
+  fill: #007bff !important; }
+  .active:before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-bottom: 3px solid #007bff;
+    bottom: -10px; }
+
+.list-group-item {
+  font-weight: 500; }
+
+.list-active {
+  background-color: #e7f3ff;
+  fill: #fff; }
+  .list-active .list-icon {
+    background-color: #007bff; }
+
 .icon__center {
   fill: #65676b;
   position: relative;
@@ -7834,10 +7852,6 @@ a.text-dark:hover, a.text-dark:focus {
   .icon__center:hover {
     background-color: #e4e6eb;
     border-radius: 8px; }
-  .icon__center:focus {
-    color: #1877f2 !important; }
-  .icon__center:active {
-    color: #1877f2 !important; }
 
 .badge-notification {
   position: absolute;
