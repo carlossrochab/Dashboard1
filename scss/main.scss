@@ -10,13 +10,23 @@ $theme-colors: (
   "light": $light,
 );
 
-@import "node_modules/bootstrap/scss/bootstrap";
+$body-bg: #F0F2F5;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+@import "c-card";
 
 .sidebar-container {
+  display: flex;
+  flex-direction: column;
   height: calc(100vh - 68px);
   transition: margin .25s ease-in-out;
-  overflow: auto;
- 
+  width: 360px;
+  background-color: #fff;
+  flex-shrink: 0;
+  box-shadow: 
+    1px 0 1px 0 rgba(black, .05), 
+    2px 0 5px 0 rgba(black, .05);
 }
 
 .logo-facebook  {
@@ -30,15 +40,9 @@ $theme-colors: (
   }
 }
 
-.sidebar-container {
-  width: 360px
-}
-
-
 .content-wrapper {
   padding-top: 68px;
 }
-
 
 .glass {
   background-color: #f0f2f5;
@@ -85,7 +89,7 @@ $theme-colors: (
     position: absolute; 
     border-bottom: 3px solid $primary;
     bottom: -10px;
-      }
+  }
 }
 
 .list-group-item {
@@ -98,8 +102,8 @@ $theme-colors: (
     .list-icon {
       background-color: $primary;
     }
-  
 }
+
 .icon__center {
   fill: #65676b;
   position: relative;
@@ -108,12 +112,10 @@ $theme-colors: (
   display: inline-flex;
   justify-content: center;
   align-items: center;
-
     &:hover{
-      background-color: #e4e6eb;
+      background-color: rgba(black, 0.05);
       border-radius: 8px;
     }
-    
 }
 
 .badge-notification {
@@ -137,7 +139,6 @@ $theme-colors: (
 .title-dashboard {
   font-size: 1.5rem;
   text-align: left;
-  
 }
 
 .input-sidebar {
@@ -154,8 +155,7 @@ $theme-colors: (
   background-color: #f0f2f5;
   border: 0;
   font-weight: normal;
-  padding-left: 26px;
-  
+  padding-left: 2rem;
 }
 
 .bells {
@@ -172,7 +172,8 @@ $theme-colors: (
 
 .lupa {
   position: absolute;
-  left: 23px;
+  left: 10px;
+  top: 12px;
   color: #1e2023;
   font-size: 14px;
 }
@@ -193,48 +194,13 @@ $theme-colors: (
   color: $icon-color;
 }
 
-.carta {
-  background-color: #1877f2 ;
-  display: flex;
-  padding: 20px;
-  width: 583px;
-  border-radius: 8px;
-}
-
-.thumbnail__card {
-  display: flex;
-  align-items: baseline;
-}
-
-.title__card {
-  color: #fff;
-  font-size: 1.25rem;
-  text-align: left;
-  font-weight: 700;
-  margin-top: -4px;
-  margin-bottom: 5px;
-  line-height: 1.2;
-  max-width: 100%;
-  display: block;
-}
-
-.span__card {
-  color: #fff;
-  text-align: left;
-  font-weight: normal;
-  max-width: 100%;
-  display: block;
-  margin-bottom: 16px;
-
-}
-
-.sidebar-container::-webkit-scrollbar {
+.nice-scroll::-webkit-scrollbar {
   width: 8px;
   background-color: #f0f2f5;
   height: 1215px;
 }
 
-.sidebar-container::-webkit-scrollbar-thumb {
+.nice-scroll::-webkit-scrollbar-thumb {
   background-color: #ced0d4;
   border-radius: 3px;
 }

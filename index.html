@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="css/main.css">
 
   <title>Dashboard</title>
 </head>
@@ -105,77 +105,70 @@
 
   <div class="content-wrapper d-flex">
     <div id="sidebar-container" class="sidebar-container border-right">
-      <div class="content-Marketplace d-flex justify-content-between align-self-center p-3">
-        <h1 class="font-weight-bold title-dashboard">Marketplace</h1>
-        <a href="#">
-          <div class="bells">
-            <svg class="bi bi-bell-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8 16a2 2 0 002-2H6a2 2 0 002 2zm.995-14.901a1 1 0 10-1.99 0A5.002 5.002 0 003 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
-            </svg>
-          </div>
-        </a>
-      </div>
 
-      <div>
-        <form class="form-inline px-3">
-          <input class="input-sidebar form-control w-100 " type="search" placeholder="Buscar en Marketplace"
-            aria-label="Search">
-          <svg class="bi bi-search lupa" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor"
-            xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd"
-              d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z"
-              clip-rule="evenodd" />
-            <path fill-rule="evenodd"
-              d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z"
-              clip-rule="evenodd" />
+      <div class="content-Marketplace p-3">
+        <div class="d-flex justify-content-between mb-3">
+          <h1 class="font-weight-bold title-dashboard">Marketplace</h1>
+          <a href="#">
+            <div class="bells">
+              <svg class="bi bi-bell-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 16a2 2 0 002-2H6a2 2 0 002 2zm.995-14.901a1 1 0 10-1.99 0A5.002 5.002 0 003 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <form class="position-relative">
+          <input class="input-sidebar form-control" type="search" placeholder="Buscar en Marketplace" aria-label="Search">
+          <svg class="bi bi-search lupa" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd" />
+            <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd" />
           </svg>
         </form>
       </div>
 
-        <br>
-
-      <div class="list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center border-0 p-3 text-decoration-none list-active">
-          <div class="list-icon mr-2">
-            <svg viewBox="0 0 28 28" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 aaxa7vy3" height="28" width="28"><path d="m10.995,23.625l0,-5.8c0,-0.526 0.424,-0.95 0.95,-0.95l4.09,0c0.526,0 0.95,0.424 0.95,0.95l0,5.8l4.98,0c0.43,0 0.78,-0.348 0.78,-0.78l0,-8.264c-0.124,-0.073 -0.242,-0.159 -0.35,-0.256l-0.41,-0.37c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.17,0.15c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.23,0c-0.71,0 -1.41,-0.26 -1.96,-0.75l-0.19,-0.17c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.19,0.17c-0.55,0.49 -1.25,0.76 -1.96,0.76l-0.14,0c-0.71,0 -1.4,-0.26 -1.94,-0.74l-0.22,-0.19c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.18,0.16c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.18,0c-0.72,0 -1.41,-0.26 -1.96,-0.75l-0.2,-0.17c-0.18,-0.17 -0.44,-0.17 -0.63,0l-0.48,0.43c-0.076,0.067 -0.156,0.129 -0.24,0.183l0,8.287c0,0.43 0.348,0.78 0.78,0.78l4.96,0zm13.25,-8.795l0,8.015c0,1.262 -1.023,2.28 -2.28,2.28l-15.93,0c-1.262,0 -2.28,-1.023 -2.28,-2.28l0,-7.989c-0.993,-0.139 -1.76,-1.038 -1.76,-2.131l0,-2.35c0,-0.28 0.22,-0.5 0.5,-0.5l23.01,0c0.28,0 0.5,0.22 0.5,0.5l0,2.18c0,1.124 -0.756,2.063 -1.76,2.275zm0.71,-5.955l-21.93,0c-0.35,0 -0.59,-0.36 -0.46,-0.69l1.82,-4.49c0.19,-0.49 0.65,-0.82 1.17,-0.82l16.87,0c0.52,0 0.98,0.33 1.17,0.83l1.82,4.48c0.14,0.33 -0.11,0.69 -0.46,0.69z"></path>
-            </svg>
+      <div class="nice-scroll overflow-auto">
+        <div class="list-group-flush">
+          <a href="#" class="list-group-item list-group-item-action d-flex align-items-center border-0 p-3 text-decoration-none list-active">
+            <div class="list-icon mr-2">
+              <svg viewBox="0 0 28 28" class="a8c37x1j ms05siws hwsy1cff b7h9ocf4 aaxa7vy3" height="28" width="28"><path d="m10.995,23.625l0,-5.8c0,-0.526 0.424,-0.95 0.95,-0.95l4.09,0c0.526,0 0.95,0.424 0.95,0.95l0,5.8l4.98,0c0.43,0 0.78,-0.348 0.78,-0.78l0,-8.264c-0.124,-0.073 -0.242,-0.159 -0.35,-0.256l-0.41,-0.37c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.17,0.15c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.23,0c-0.71,0 -1.41,-0.26 -1.96,-0.75l-0.19,-0.17c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.19,0.17c-0.55,0.49 -1.25,0.76 -1.96,0.76l-0.14,0c-0.71,0 -1.4,-0.26 -1.94,-0.74l-0.22,-0.19c-0.19,-0.17 -0.45,-0.17 -0.64,0l-0.18,0.16c-0.55,0.49 -1.25,0.76 -1.97,0.76l-0.18,0c-0.72,0 -1.41,-0.26 -1.96,-0.75l-0.2,-0.17c-0.18,-0.17 -0.44,-0.17 -0.63,0l-0.48,0.43c-0.076,0.067 -0.156,0.129 -0.24,0.183l0,8.287c0,0.43 0.348,0.78 0.78,0.78l4.96,0zm13.25,-8.795l0,8.015c0,1.262 -1.023,2.28 -2.28,2.28l-15.93,0c-1.262,0 -2.28,-1.023 -2.28,-2.28l0,-7.989c-0.993,-0.139 -1.76,-1.038 -1.76,-2.131l0,-2.35c0,-0.28 0.22,-0.5 0.5,-0.5l23.01,0c0.28,0 0.5,0.22 0.5,0.5l0,2.18c0,1.124 -0.756,2.063 -1.76,2.275zm0.71,-5.955l-21.93,0c-0.35,0 -0.59,-0.36 -0.46,-0.69l1.82,-4.49c0.19,-0.49 0.65,-0.82 1.17,-0.82l16.87,0c0.52,0 0.98,0.33 1.17,0.83l1.82,4.48c0.14,0.33 -0.11,0.69 -0.46,0.69z"></path>
+              </svg>
+            </div>
+            Explora Todo
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex align-items-center border-0 p-3 text-decoration-none ">
+            <div class="list-icon mr-2">
+              <svg class="bi bi-credit-card" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd" />
+                <rect width="3" height="3" x="2" y="9" rx="1" />
+                <path d="M1 5h14v2H1z" />
+              </svg>
+            </div>
+            Explora Todo
+          </a>
+          <a href="#" class="list-group-item list-group-item-action d-flex align-items-center border-0 p-3 text-decoration-none ">
+            <div class="list-icon mr-2">
+              <svg class="bi bi-credit-card" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd" />
+                <rect width="3" height="3" x="2" y="9" rx="1" />
+                <path d="M1 5h14v2H1z" />
+              </svg>
+            </div>
+            Explora Todo
+          </a>
+  
+          <div class="my-2 px-3">
+            <button type="button" class="btn btn-light btn-block">+ Crea una nueva aplicación</button>
           </div>
-          Explora Todo
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center border-0 p-3 text-decoration-none ">
-          <div class="list-icon mr-2">
-            <svg class="bi bi-credit-card" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd" />
-              <rect width="3" height="3" x="2" y="9" rx="1" />
-              <path d="M1 5h14v2H1z" />
-            </svg>
+          <hr>
+  
+          <div class="filtros px-3">
+            <h6>Filtros</h6>
+            <a href="#">Valencia. En un radio de 60km</a>
           </div>
-          Explora Todo
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex align-items-center border-0 p-3 text-decoration-none ">
-          <div class="list-icon mr-2">
-            <svg class="bi bi-credit-card" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" d="M14 3H2a1 1 0 00-1 1v8a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1zM2 2a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V4a2 2 0 00-2-2H2z" clip-rule="evenodd" />
-              <rect width="3" height="3" x="2" y="9" rx="1" />
-              <path d="M1 5h14v2H1z" />
-            </svg>
-          </div>
-          Explora Todo
-        </a>
-
-        <div class="my-2 px-3">
-          <button type="button" class="btn btn-light btn-block">+ Crea una nueva aplicación</button>
+  
+          <hr>
         </div>
-        <hr>
-
-        <div class="filtros px-3">
-          <h6>Filtros</h6>
-          <a href="#">Valencia. En un radio de 60km</a>
-        </div>
-
-        <hr>
 
         <div class="list-group-flush">
           <a href="#" class="list-group-item list-group-item-action d-flex align-items-center border-0 p-3 text-decoration-none ">
@@ -239,26 +232,26 @@
             Lorem, ipsum dolor.
           </a>
         </div>
+
       </div>
     </div>
 
-    <div class="container-fuid px-5">
-      <section>
-        <div class="carta">
-           <div class="text__card">
-             <h3 class="title__card">COVID-19: compradores y vendedores</h3>
-             <span class="span__card">Sigue las recomendaciones locales sobre distanciamiento físico y quedarse en casa.</span>
-             <a href="#" class="btn btn-light">Más información</a>
-           </div>
-           <a href="" class="thumbnail__card">
-            <img class="f9o22wc5 tpga1rol uo3d90p7" src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Z6y_uWoBhoi.png" class="img__card" alt="" height="118" width="238"></a>
+    <main class="w-100 p-4">
+      <div class="container-fuid">
+
+          <div class="c-card px-3 px-md-5">
+            <div>
+              <h3 class="c-card__title">COVID-19: compradores y vendedores</h3>
+              <span class="c-card__span">Sigue las recomendaciones locales sobre distanciamiento físico y quedarse en casa.</span>
+              <a href="#" class="btn btn-light">Más información</a>
+            </div>
+            <a href="" class="c-card__thumbnail">
+              <img src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/Z6y_uWoBhoi.png" class="img-fluid" height="118" width="238">
+            </a>
+          </div>
+
         </div>
-      </section>
-    </div>
-
-
-  
-
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
