@@ -5,6 +5,8 @@ $blue-light : #e7f3ff;
 $icon-rounded-bg: #e4e6eb;
 $icon-color: #050505;
 
+$sidebar-width: 360px;
+
 $theme-colors: (
   "primary": #1877f2,
   "light": $light,
@@ -13,22 +15,25 @@ $theme-colors: (
 $body-bg: #F0F2F5;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
-
 @import "c-card";
-
 @import "cc-card";
 
 .sidebar-container {
+  position: fixed;
+  left: 0;
+  top: 68px;
+  bottom: 0;
   display: flex;
   flex-direction: column;
   height: calc(100vh - 68px);
   transition: margin .25s ease-in-out;
-  width: 360px;
+  width: $sidebar-width;
   background-color: #fff;
   flex-shrink: 0;
   box-shadow: 
     1px 0 1px 0 rgba(black, .05), 
     2px 0 5px 0 rgba(black, .05);
+    z-index: 1020;
 }
 
 .logo-facebook  {
@@ -196,10 +201,6 @@ $body-bg: #F0F2F5;
   color: $icon-color;
 }
 
-.sidebar-item {
- 
-}
-
 .nice-scroll::-webkit-scrollbar {
   width: 8px;
   background-color: #f0f2f5;
@@ -211,3 +212,7 @@ $body-bg: #F0F2F5;
   border-radius: 3px;
 }
 
+.main-content {
+  margin-left: $sidebar-width;
+  width: 100%;
+}
