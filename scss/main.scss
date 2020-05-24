@@ -16,7 +16,7 @@ $body-bg: #F0F2F5;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "c-card";
-@import "c-products";
+@import "c-product";
 
 .sidebar-container {
   position: fixed;
@@ -215,4 +215,27 @@ $body-bg: #F0F2F5;
 .main-content {
   margin-left: $sidebar-width;
   width: 100%;
+}
+
+.suggestion-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 20px;
+}
+
+.suggestion-title {
+  color: $icon-color;
+  font-size: 1.25rem;
+  font-weight: 700;
+  max-width: 100%;
+  display: block;
+  margin: 0;
+}
+
+
+
+.suggetion-ubication {
+  font-size: .9375rem;
+  color: $primary;
 }
