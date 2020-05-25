@@ -7843,15 +7843,16 @@ a.text-dark:hover, a.text-dark:focus {
 
 .c-product__icon {
   font-size: 14px;
-  background-color: #e7f3ff;
+  background-color: #fff;
   border-radius: 50%;
   height: 36px;
   width: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #65676b;
-  z-index: 32; }
+  color: #606770;
+  z-index: 32;
+  fill: #606770; }
 
 .c-product__description {
   font-size: 14px;
@@ -7865,14 +7866,13 @@ a.text-dark:hover, a.text-dark:focus {
 
 .c-product__action {
   position: absolute;
-  width: 100%;
   display: flex;
   list-style: none;
   top: 12px;
-  left: 50px;
   opacity: 0;
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  right: 12px; }
 
 .c-product__ubication {
   color: #65676b;
@@ -7883,7 +7883,17 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 1px 0; }
 
 .c-product__action--link {
-  z-index: 40; }
+  z-index: 40;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none; }
+  .c-product__action--link:focus {
+    outline: none; }
+
+.c-product--link:hover {
+  text-decoration: none; }
 
 .sidebar-container {
   position: fixed;
@@ -7938,6 +7948,8 @@ a.text-dark:hover, a.text-dark:focus {
   align-items: center; }
   .icon-end:hover {
     background-color: rgba(0, 0, 0, 0.05); }
+    .icon-end:hover:active {
+      transform: scale(0.98); }
 
 .nav-icon-star {
   position: absolute; }
@@ -8067,7 +8079,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: block;
   margin: 0; }
 
-.suggetion-ubication {
+.suggetion-location {
   font-size: .9375rem;
   color: #007bff; }
 

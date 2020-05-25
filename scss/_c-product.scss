@@ -51,15 +51,16 @@
 
 .c-product__icon {
   font-size: 14px;
-  background-color: $light;
+  background-color: #fff;
   border-radius: 50%;
   height: 36px;
   width: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #65676b; 
+  color: #606770; 
   z-index: 32;
+  fill: #606770;
 }
 
 .c-product__description {
@@ -75,14 +76,13 @@
   
 .c-product__action {
   position: absolute; 
-  width: 100%;
   display: flex;
   list-style: none;
   top: 12px;
-  left: 50px;
   opacity: 0;
   padding: 0;
   margin: 0;
+  right: 12px;
 }
 
 .c-product__ubication {
@@ -96,4 +96,19 @@
 
 .c-product__action--link {
   z-index: 40;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+    &:focus {
+      outline: none;
+    }
+
+}
+
+.c-product--link {
+   &:hover {
+     text-decoration: none;
+   }
 }

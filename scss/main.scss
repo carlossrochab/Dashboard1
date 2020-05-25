@@ -81,6 +81,9 @@ $body-bg: #F0F2F5;
   align-items: center;
     &:hover {
       background-color: rgba(0, 0, 0, 0.05);
+       &:active {
+         transform: scale(.98);
+       }
     }
 }
 
@@ -233,9 +236,7 @@ $body-bg: #F0F2F5;
   margin: 0;
 }
 
-
-
-.suggetion-ubication {
+.suggetion-location {
   font-size: .9375rem;
   color: $primary;
 }
