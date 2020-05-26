@@ -7853,6 +7853,10 @@ a.text-dark:hover, a.text-dark:focus {
   color: #606770;
   z-index: 32;
   fill: #606770; }
+  .c-product__icon:hover {
+    background-color: #f0f2f5; }
+  .c-product__icon:active {
+    transform: scale(0.98); }
 
 .c-product__description {
   font-size: 14px;
@@ -7874,7 +7878,7 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0;
   right: 12px; }
 
-.c-product__ubication {
+.c-product__location {
   color: #65676b;
   font-weight: normal;
   font-size: 12px;
